@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <!-- html에서는 border만을 사용해서 테이블을 꾸밀 수 있음 css를 알아야 이쁘게 가능 -->
+    <table border="3">
+        <!-- thead와 tbody는 사실 나눌필요없지만
+            테이블의 속성과 내용을 구분을 코드상에서
+            파악하기위해 지정을 하는 것임
+            -->
+        <thead>
+            <tr>
+                <!-- td ss: table data -->
+                <th>이름</th>
+                <th>성별</th>
+                <th>주소</th>
+                <th>회비</th>
+            </tr>
+
+        </thead>
+        <!-- tr : table row -->
+
+        <tbody>
+            <tr>
+                <td>이준희</td>
+                <td>남</td>
+                <!-- 다음 행으로 2개까지 늘리겠다는것임 -->
+                <td rowspan="2">서울</td>
+                <td>500</td>
+            </tr>
+            <tr>
+                <td>은지욤</td>
+                <td>여</td>
+                <td>200</td>
+            </tr>
+            <tr>
+                <td colspan="3">합계</td>
+                <td></td>
+            </tr>
+
+        </tbody>
+    </table>
+</body>
+</html>
